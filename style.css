@@ -11,4 +11,12 @@ html{
     color: wheat;
     text-align: center;
     margin-top: 2.5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.headerTitle{
+    color: wheat;
+    text-align: center;
+    margin-top: 2.5%;
 }
