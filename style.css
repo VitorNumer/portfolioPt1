@@ -7,16 +7,150 @@ html{
     background: rgb(39, 39, 39);
 }
 
+.headerTitle{
+    color: wheat;
+    text-align: center;
+    margin-top: 2.5%;
+}
+
 .homeMenu{
     color: wheat;
     text-align: center;
     margin-top: 2.5%;
     display: flex;
     justify-content: space-evenly;
+    list-style: none;
 }
 
-.headerTitle{
+.gradientOnRight{
+    mask-image: linear-gradient(to left, transparent, black);
+    -webkit-mask-image: linear-gradient(to left, transparent, black);
+}
+
+.gradientOnLeft{
+    mask-image: linear-gradient(to right, transparent, black);
+    -webkit-mask-image: linear-gradient(to right, transparent, black);
+}
+
+li{
+    position: relative;
+    display: inline-block;
+}
+
+li::after{
+  content: "•";
+  display: block;
+  margin-top: 4px;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+li:hover::after{
+  color: rgb(241, 60, 60);
+  opacity: 1;
+}
+
+.homeMenu li:hover{
+    color: rgb(250, 202, 112);
+    cursor: pointer;
+    list-style-type: disc;
+}
+
+.container{
     color: wheat;
-    text-align: center;
-    margin-top: 2.5%;
+    display: flex;
+    flex-direction: row;
+    margin: 10%;
+    font-size: large;
+}
+
+.textoMenor{
+    margin-top: 3%;
+    font-size: 90%;
+}
+
+img{
+    max-width: 53%;
+    display: inline-block;
+    color: wheat;
+}
+
+.btn-header{
+    font-size: medium;
+    border: 0;
+    color: rgb(231, 222, 206);
+    background-color: rgb(241, 60, 60);
+    margin-top: 4%;
+    padding: 2%;
+    cursor: pointer;
+}
+
+.btn-header:hover{
+    color: white;
+    background-color: rgb(206, 44, 44);
+}
+
+.lingua{
+    color: wheat;
+    font-size: large;
+    margin: 10% 10% 5% 10%;
+}
+
+.containerLingua{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 30%;
+    margin-left: 8%;
+}
+
+.containerLingua1{
+    display: block;
+    background-color: rgba(65, 62, 62, 0.247);
+    padding: 7%;
+}
+
+.containerLingua2{
+    display: block;
+    background-color: rgba(65, 62, 62, 0.247);
+    padding: 7%;
+}
+
+.containerLingua3{
+    display: block;
+    background-color: rgba(65, 62, 62, 0.247);
+    padding: 7%;
+}
+
+.containerLingua4{
+    display: block;
+    background-color: rgba(65, 62, 62, 0.247);
+    padding: 7%;
+}
+
+.iconeHtml{
+    color: rgb(245, 98, 0);
+    font-size: 50px;
+}
+
+.iconeCss{
+    color: aqua;
+    font-size: 50px;
+}
+
+.iconeJs{
+    color: yellow;
+    font-size: 50px;
+}
+
+.iconeJava{
+    color: rgb(241, 60, 60);
+    font-size: 50px;
+}
+
+.banner{
+    display: block;
+    align-content: center;
+    padding: 0;
+    background-color: aqua;
 }
